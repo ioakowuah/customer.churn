@@ -1,0 +1,63 @@
+<DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Prediction</title>
+  </head>
+
+  <body>
+    <h1><div style='text-align:center'><font color = 'blue'>Customer Churn Prediction</font></div></h1>
+    <hr>
+    </br>
+    <h2><div style='text-align:center'>Enter the value of Contract, Internet Service, Payment Method, Online Security, Tech Support</div></h2>
+    </br>
+    <div class="container">
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+            <div class="form-group">
+              <label for ="Contract"><p class="font-weight-bold">Contract Type</p></label>
+              <input type="text" name="Contract">
+              <small id="Contracthelp" class="form-text text-muted">Enter 1 if Contract is month-to-month else enter 0</small>
+              </div>
+
+              <div class="form-group">
+                <label for ="InternetService"><p class="font-weight-bold">Internet Service</p></label>
+                <input type="text" name="InternetService">
+                <small id="InternetServicehelp" class="form-text text-muted">Enter 1 if Internet Service is Fiberoptic else enter 0</small>
+                </div>
+
+                <div class="form-group">
+                  <label for ="PaymentMethod"><p class="font-weight-bold">Payment Method</p></label>
+                  <input type="text" name="PaymentMethod">
+                  <small id="PaymentMethodhelp" class="form-text text-muted">Enter 1 if Payment Method is Electronic Check else enter 0</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for ="OnlineSecurity"><p class="font-weight-bold">Online Security</p></label>
+                    <input type="text" name="OnlineSecurity">
+                    <small id="OnlineSecurityhelp" class="form-text text-muted">Enter 1 if No Online Security else enter 0</small>
+                    </div>
+
+                    <div class="form-group">
+                      <label for ="TechSupport"><p class="font-weight-bold">Tech Support</p></label>
+                      <input type="text" name="TechSupport">
+                      <small id="TechSupporthelp" class="form-text text-muted">Enter 1 if No TechSupport else enter 0</small>
+                      </div>
+
+                      <input class="btn btn-primary" type="submit" value="submit">
+
+
+
+            </form>
+
+
+          </div>
+          </div>
+          </div>
+
+
+  </body>
+
+
+</html>
